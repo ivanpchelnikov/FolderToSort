@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SortirovkaFoto.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,14 +26,18 @@ namespace SortirovkaFoto
             InitializeComponent();
         }
 
+        private void NotifyDone()
+        {
+            DialogResult = ((SelectFolderViewModel)DataContext).SelectedCredential != null;
+        }
         private void ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            ///do something
+            NotifyDone();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            /// do something
+            NotifyDone();
         }
     }
 }

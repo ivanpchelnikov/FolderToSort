@@ -22,7 +22,7 @@
                 <Button Grid.Column="1" Height="23" Content="Browse" Command="{Binding Path=CommandBrowseKeystore}" TabIndex="2"/>
             </Grid>
         </GroupBox>
-        <GroupBox Grid.Row="1" Header="credentials">
+        <GroupBox Grid.Row="1" Header="Simular folders:">
             <ListBox
                 ItemsSource="{Binding Path=Credentials}"
                 SelectedItem="{Binding Path=SelectedCredential}" MouseDoubleClick="ListBox_MouseDoubleClick" TabIndex="3">
