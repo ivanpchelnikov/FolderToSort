@@ -25,19 +25,5 @@ namespace SortirovkaFoto
         {
             InitializeComponent();
         }
-
-        private void NotifyDone()
-        {
-            DialogResult = ((SelectFolderViewModel)DataContext).SelectedCredential != null;
-        }
-        private void ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            NotifyDone();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NotifyDone();
-        }
     }
 }

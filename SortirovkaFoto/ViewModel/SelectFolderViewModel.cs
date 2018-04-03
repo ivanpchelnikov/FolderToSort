@@ -58,8 +58,8 @@ namespace SortirovkaFoto.ViewModel
                 AddExtension = true,
                 CheckFileExists = true,
                 CheckPathExists = true,
-                DefaultExt = ".xml",
-                Filter = "ABR Keystore Files (*.xml)|*.xml",
+                DefaultExt = ".jpeg",
+                Filter = "ABR Keystore Files (*.jpg)|*.jpeg",
                 Multiselect = false,
                 Title = "Select keystore to open"
             };
